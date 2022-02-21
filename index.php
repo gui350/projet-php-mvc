@@ -5,6 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
+include 'fonction.php';
 include 'models/SimpleOrm.php';
 
 $conn = new mysqli('localhost', 'root', 'root');
@@ -30,6 +31,16 @@ switch ($route) {
     case 'details-article':
         include __DIR__ . '/controller/details-articles-controller.php';
         break;
+
+    case 'ajouter-articles':
+        include __DIR__ . '/controller/ajouter-articles-controller.php';
+        break;
+
+    case 'ajouter-article-handler':
+        include __DIR__ . '/controller/ajouter-article-handler-controller.php';
+        break;
+
+
 
 
     default:

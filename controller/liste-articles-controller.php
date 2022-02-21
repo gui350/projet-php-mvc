@@ -5,4 +5,4 @@ $articles = Article::all();
 
 
 
-include __DIR__. '/../views/parties/articles/liste.php';
+include __DIR__. '/../views/articles/liste.php';

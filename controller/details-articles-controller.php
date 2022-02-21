@@ -7,6 +7,6 @@ include_once __DIR__. '/../models/Article.php';
 
 $article = Article::retrieveByPK($_GET['id']);
 
-if (empty($article)) die ('Erreur 408');
+if (empty($article)) die ('Erreur 404');
 
 include __DIR__. '/../views/articles/details.php';

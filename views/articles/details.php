@@ -9,14 +9,14 @@
 
     <div class="col-8">
         <dl>
-            <dd>Auteur</dd>
-            <dt><?= $article->contenu ?></dt>
+            <dt>Auteur</dt>
+            <d><?= $article->contenu ?></dd>
 
-            <dd>Titre</dd>
-            <dt><?= $article->auteur ?></dt>
+            <dt>Titre</dt>
+            <dd><?= $article->auteur ?></dd>
             
-            <dd>Date de publication</dd>
-            <dt><?= $article->date_de_publication ?></dt>
+            <dt>Date de publication</dt>
+            <dd><?= $article->date_de_publication ?></dd>
         </dl>
 
     </div>
