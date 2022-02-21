@@ -11,6 +11,10 @@
                 <p class="card-text"><?= $article->contenu ?></p>
                 <p class="card-text"><?= $article->auteur ?></p>
                 <p class="card-text"><?= $article->date_de_publication ?></p>
+                
+                <p class="card-text">
+                    <a class="text-align-right" href="index.php?route=details-article&id=<?= $article->id ?>">Voir plus</a>
+                </p>
             </div>
         </div>
     <?php } ?>

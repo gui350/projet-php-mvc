@@ -27,6 +27,11 @@ switch ($route) {
         include __DIR__ . '/controller/liste-articles-controller.php';
         break;
 
+    case 'details-article':
+        include __DIR__ . '/controller/details-articles-controller.php';
+        break;
+
+
     default:
         die('Erreur 404');
 }
