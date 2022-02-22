@@ -40,6 +40,14 @@ switch ($route) {
         include __DIR__ . '/controller/ajouter-article-handler-controller.php';
         break;
 
+    case 'modifier-article':
+        include __DIR__ . '/controller/modifier-article-controller.php';
+        break;
+
+    case 'supprimer-article':
+        include __DIR__ . '/controller/supprimer-article-controller.php';
+        break;
+
 
 
 
