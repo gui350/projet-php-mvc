@@ -4,6 +4,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+session_start();
+
 
 include 'fonction.php';
 include 'models/SimpleOrm.php';
@@ -46,6 +48,14 @@ switch ($route) {
 
     case 'supprimer-article':
         include __DIR__ . '/controller/supprimer-article-controller.php';
+        break;
+
+    case 'connexion':
+        include __DIR__ . '/controller/authentication/connexion-controller.php';
+        break;
+
+    case 'connexion-handler':
+        include __DIR__ . '/controller/authentication/connexion-handler-controller.php';
         break;
 
 
