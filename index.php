@@ -58,6 +58,10 @@ switch ($route) {
         include __DIR__ . '/controller/authentication/connexion-handler-controller.php';
         break;
 
+    case 'deconnexion':
+        include __DIR__ . '/controller/authentication/deconnexion-controller.php';
+        break; 
+
 
 
 

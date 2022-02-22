@@ -1,5 +1,7 @@
 <?php
 
+if (empty($_SESSION['identifiant']) || $_SESSION['identifiant'] != 'admin') die ('Erreur 403');
+
 if (
     !empty($_POST['auteur'])
     && !empty($_POST['image'])
